@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* div{
+    border: 1px solid red;
+} */
+
+/* Navbar */
+nav{
+    width: 100%;
+    height: 60px;
+    padding: 0 3% 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+#navLeftPart{
+    display: flex;
+    width: 13%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#navMiddlePart{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+#navRightPart{
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#searchedResult{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid rgb(218, 218, 218);
+    overflow: scroll;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    padding: 12px 15px;
+    /* left: -1000; */
+}
+#searchedResult::-webkit-scrollbar {
+    display: none;
+}
+/* --------------------------------------------------- */
+
+/* body container */
+#bodyBox{
+    margin-top: 60px;
+    display: flex;
+}
+#sideBar{
+    min-width: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+}
+#sideBar span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#videosBox{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin-left: 6%;
+}
+#sugestions{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    border-top: 1px solid rgb(219, 219, 219);
+    height: 60px;
+    position: fixed;
+    top: 60px;
+    background-color: white;
+}
+.sugBoxes{
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+}
+
+#mainContainer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 23%);
+    justify-content: space-evenly;
+    margin-top: 85px;
+    background-color: rgb(245, 245, 245);
+}
+#mainContainer p{
+    font-weight: 500;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ---------------------------------------- */
+
+iframe{
+    height: "200px"; 
+    width:100%;
+}
+.videoAPIBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.video_titleDiv{
+    word-break: break-word;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     line-height: 21px;
+     max-height: 42px;
+     -webkit-line-clamp: 3; /* number of lines to show */
+     -webkit-box-orient: vertical;
+}
+.channel_titleDiv{
+    display: flex;
+    align-items:center ;
+    margin: 8px 0;
+    color: rgb(105, 105, 105);
+    gap: 8px;
+}
+
+/* ----------------------------------------------------------- */
+
+@media (max-width: 540px) {
+    #mainContainer{
+        grid-template-columns: repeat(1, 80%);
+        justify-content: space-evenly;
+    }
+    #sugestions{
+        overflow-x: scroll;
+    }
+    #sugestions::-webkit-scrollbar {
+        display: none;
+    }
+    #videosBox{
+        /* max-width: 70%; */
+        margin-left: 16%;
+    }
+}
+@media (min-width: 541px) and (max-width: 860px) {
+    #mainContainer{
+        grid-template-columns: repeat(2, 45%);
+        justify-content: space-evenly;
+    }
+    #sugestions{
+        overflow-x: scroll;
+    }
+    #sugestions::-webkit-scrollbar {
+        display: none;
+    }
+    #videosBox{
+        max-width: 90%;
+        margin-left: 12%;
+    }
+}
+@media (min-width: 861px) and (max-width: 1100px){
+    #mainContainer{
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-evenly;
+    }
+
+    #sugestions{
+        overflow-x: scroll;
+    }
+    #sugestions::-webkit-scrollbar {
+        display: none;
+    }
+    #videosBox{
+        margin-left: 8%;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <!-- <img src="https://img.icons8.com/color/48/000000/youtube-play.png"/> -->
+    <link rel="icon" href="https://img.icons8.com/color/144/000000/youtube-play.png" type="image/icon type">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!--Top Navbar -->
+    <nav>
+        <!-- <div id="topLayout"> -->
+            <!-- navbar left part -->
+            <div id="navLeftPart">
+                <img src="https://img.icons8.com/material-outlined/24/000000/menu--v3.png"/>
+                <span style="display: flex; align-items: center; justify-content: center; gap: 3px;">
+                    <img style="width: 90px;" src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png">
+                    <p style="margin-bottom: 25px; font-size: small;">IN</p>
+                </span>
+            </div>
+            <!-- navbar middle part -->
+            <div id="navMiddlePart">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <input style="width: 85%; height: 38px; padding: 10px; border-radius: 2px 0 0 2px; border: 1px solid rgb(194, 194, 194);" oninput="debounce(this.value, 1000)" id="searchKeyword" type="text" placeholder="Search">
+                    <button style="width: 10%; height: 38px; border-radius: 0 2px2px 0px; border: 1px solid rgb(194, 194, 194);" onclick="appendVideo()"><img src="https://img.icons8.com/ios/25/000000/search--v1.png"/></button>
+                    <span style="margin-left: 2%; width: 40px; height: 40px; background-color: rgb(247, 247, 247); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <img src="https://img.icons8.com/material-sharp/25/000000/microphone--v1.png"/>
+                    </span>
+                </div>
+                <div id="searchedResult">
+
+                </div>
+            </div>
+            <!-- navbar right part -->
+            <div id="navRightPart">
+                <span style="border-radius: 50%; background-color: rgb(247, 247, 247); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;" >
+                    <img src="https://img.icons8.com/ios/25/000000/video-call.png"/>
+                </span>
+                <img src="https://img.icons8.com/ios/25/000000/moleskine-icon.png"/>
+                <img src="https://img.icons8.com/ios/25/000000/appointment-reminders--v1.png"/>
+                <img style="width: 25px" src="https://scontent.fpat2-2.fna.fbcdn.net/v/t1.6435-1/p320x320/33651434_2025327221014265_760750239832342528_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=WTzJuzgffgMAX9PHq8-&_nc_ht=scontent.fpat2-2.fna&oh=94caff9035172d0ba9d8feb953ff8519&oe=618CC0AC" alt="">
+            </div>
+        <!-- </div> -->
+    </nav>
+    <div id="bodyBox">
+        <div id="sideBar">
+            <span>
+                <img style="width: 25px;" src="https://img.icons8.com/material-rounded/24/000000/home.png"/>
+                <p style="font-size: 12px;">Home</p>
+            </span>
+            <span>
+                <img style="width: 25px;" src="https://img.icons8.com/ios/50/000000/compass--v1.png"/>
+                <p style="font-size: 12px;">Explore</p>
+            </span>
+            <span>
+                <img style="width: 25px;" src="https://img.icons8.com/ios/50/000000/video-playlist.png"/>
+                <p style="font-size: 12px;">Subscriptions</p>
+            </span>
+            <span>
+                <img style="width: 25px;" src="https://img.icons8.com/material-outlined/50/000000/video-gallery.png"/>
+                <p style="font-size: 12px;">Library</p>
+            </span>
+        </div>
+        <div id="videosBox">
+            <div id="sugestions">
+                <div class="sugBoxes"><p>All</p></div>
+                <div class="sugBoxes"><p>Music</p></div>
+                <div class="sugBoxes"><p>Mixes</p></div>
+                <div class="sugBoxes"><p>JavaScript</p></div>
+                <div class="sugBoxes"><p>Computer Programming</p></div>
+                <div class="sugBoxes"><p>Trending</p></div>
+                <div class="sugBoxes"><p>Data Stracture & Algo</p></div>
+                <div class="sugBoxes"><p>Full Stack Development</p></div>
+                <img src="https://img.icons8.com/ios-glyphs/15/000000/chevron-right.png"/>
+            </div>
+            <div id="mainContainer">
+                V
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./index.js"></script>
