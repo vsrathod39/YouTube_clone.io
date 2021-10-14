@@ -6,7 +6,7 @@ async function ytAPICall(){
 
     // https://youtube.googleapis.com/youtube/v3/search?q=${query}&type=video&key=AIzaSyA2eQDFN-PFovXa9BWhv9BorJ_DL9fPKbI&maxResults=20
 
-    let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${query}&type=video&key=AIzaSyA2eQDFN-PFovXa9BWhv9BorJ_DL9fPKbI&maxResults=20&safeSearch=strict&videoCaption=closedCaption&part=snippet`);
+    let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${query}&type=video&key=AIzaSyA2eQDFN-PFovXa9BWhv9BorJ_DL9fPKbI&maxResults=20&safeSearch=strict&videoCaption=closedCaption&part=snippet&chart=mostPopular&regionCode=IN`);
 
     dataFetched = await res.json();
     console.log("fdata: ", dataFetched.items);
@@ -56,7 +56,7 @@ async function appendSearchedResult(keyword){
 
 async function mostPopularVideo(){
     // 
-    let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?type=video&key=AIzaSyA2eQDFN-PFovXa9BWhv9BorJ_DL9fPKbI&maxResults=20&safeSearch=strict&videoCaption=closedCaption&part=snippet&chart=mostPopular&regionCode=IND`);
+    let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?type=video&key=AIzaSyA2eQDFN-PFovXa9BWhv9BorJ_DL9fPKbI&maxResults=20&safeSearch=strict&videoCaption=closedCaption&part=snippet&chart=mostPopular&regionCode=IN`);
 
     let data = await res.json();
     showVideoInBody(data.items);
