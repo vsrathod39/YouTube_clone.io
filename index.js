@@ -65,8 +65,8 @@ async function appendSearchedResult(keyword){
 }
 
 function showSearchedResultVideo(){
-    searchedResult.innerHTML = null;
-    searchedResult.style.display = "none;"
+    // searchedResult.innerHTML = null;
+    searchedResult.style.display = "none";
     
     mainContainer.innerHTML = null;
 
@@ -78,7 +78,7 @@ function showSearchedResultVideo(){
         // console.log(id, snippet);
 
         let vidDiv = document.createElement("div");
-        vidDiv.innerHTML = `<iframe src=https://www.youtube.com/embed/${videoId} title="YouTube video" frameBorder="0" allow="fullscreen"></iframe>`;
+        vidDiv.innerHTML = `<iframe src=https://www.youtube.com/embed/${videoId} title="YouTube video" frameBorder="0" width="380" height="220" allow="fullscreen"></iframe>`;
 
         let titleWrapper = document.createElement("div");
         titleWrapper.setAttribute("class", "titleWrapper");
@@ -124,7 +124,7 @@ function showVideoInBody(data){
         // console.log(id, snippet);
 
         let vidDiv = document.createElement("div");
-        vidDiv.innerHTML = `<iframe src=https://www.youtube.com/embed/${videoId} title="YouTube video" frameBorder="0" allow="fullscreen"></iframe>`;
+        vidDiv.innerHTML = `<iframe src=https://www.youtube.com/embed/${videoId} title="YouTube video" frameBorder="0" width="280" height="200" allow="fullscreen"></iframe>`;
 
         let video_titleDiv = document.createElement("div");
         video_titleDiv.setAttribute("class","video_titleDiv");

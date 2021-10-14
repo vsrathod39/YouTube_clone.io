@@ -127,7 +127,8 @@ nav{
     grid-template-columns: repeat(4, 23%);
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 85px;
+    margin-top: 60px;
+    padding: 20px 0;
     background-color: rgb(241, 241, 241);
 }
 #mainContainerSecoundry{
@@ -137,7 +138,8 @@ nav{
     /* grid-template-columns: repeat(4, 23%); */
     /* justify-content: space-evenly; */
     flex-wrap: wrap;
-    margin-top: 85px;
+    margin-top: 60px;
+    padding: 20px;
     background-color: rgb(241, 241, 241);
 }
 #mainContainer p{
@@ -155,24 +157,23 @@ nav{
 }
 
 /* ----------------------------------------- */
-iframe{
-    height: "200px"; 
-    width:100%;
-}
+/* iframe{
+    border: 1px solid red;
+} */
 .videoAPIBox{
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    /* gap: 5%; */
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .videoAPIBoxSecoundry{
     display: flex;
     /* flex-direction: column; */
-    gap: 5%;
+    gap: 2%;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .video_titleDiv{
