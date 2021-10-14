@@ -54,6 +54,7 @@ nav{
     background-color: white;
     padding: 12px 15px;
     /* left: -1000; */
+    height: 500px;
 }
 .searchedResultP{
     cursor: pointer;
@@ -121,9 +122,21 @@ nav{
 }
 #mainContainer{
     display: grid;
+    /* display: flex; */
     width: 100%;
     grid-template-columns: repeat(4, 23%);
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 85px;
+    background-color: rgb(241, 241, 241);
+}
+#mainContainerSecoundry{
+    /* display: grid; */
+    display: flex;
+    width: 100%;
+    /* grid-template-columns: repeat(4, 23%); */
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
     margin-top: 85px;
     background-color: rgb(241, 241, 241);
 }
@@ -135,6 +148,13 @@ nav{
 
 /* ---------------------------------------- */
 
+.titleWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ----------------------------------------- */
 iframe{
     height: "200px"; 
     width:100%;
@@ -142,7 +162,18 @@ iframe{
 .videoAPIBox{
     display: flex;
     flex-direction: column;
+    gap: 5%;
+    width: 100%;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+.videoAPIBoxSecoundry{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5%;
+    width: 100%;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
 .video_titleDiv{
     word-break: break-word;
