@@ -241,7 +241,6 @@ function register(e){
         mobile: form.mobile.value,
         description: "Defaul"
     }
-    console.log("Data: ", obj);
     obj = JSON.stringify(obj);
 
     fetch("https://masai-api-mocker.herokuapp.com/auth/register", {
@@ -363,7 +362,7 @@ function fetchUser(e){
         password: form.password.value,
         username: form.username.value,
     }
-    console.log("Data: ", obj);
+    // console.log("Data: ", obj);
 
     let objSend = JSON.stringify(obj);
 
